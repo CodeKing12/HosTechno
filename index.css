@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Cairo&family=Teko:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cairo&family=Righteous&family=Teko:wght@300;400&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cairo&family=Righteous&family=Teko:wght@300;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cairo&family=Merriweather+Sans:wght@600&family=Righteous&family=Teko:wght@300;400&display=swap');
 * {
     font-family: 'Arvo', serif;
     line-height: 30px;
@@ -84,6 +84,11 @@ header {
     nav .logo h2 {
         font-size: 22px;
     }
+}
+
+.header-main h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 50px;
 }
 
 @media (min-width: 410px) and (max-width: 768px) {
@@ -517,6 +522,16 @@ footer .logo h2 {
 .copyright {
     background-color: #0e143b;
     color: white;
+}
+
+#weOffer .text-head h1 {
+    padding-top: 3rem;
+    color: #212529;
+    font-size: 40px;
+}
+
+#weOffer .text-head h1 span {
+    color: #2b35a0;
 }
 
 /* #2b35a0, #0e143b */
