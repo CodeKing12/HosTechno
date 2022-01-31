@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Cairo&family=Teko:wght@300;400&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cairo&family=Righteous&family=Teko:wght@300;400&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cairo&family=Merriweather+Sans:wght@600&family=Righteous&family=Teko:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cairo&family=Merriweather+Sans:ital,wght@0,500;1,700&family=Righteous&family=Teko:wght@300;400&display=swap');
+
 * {
     font-family: 'Arvo', serif;
     line-height: 30px;
@@ -88,6 +89,7 @@ header {
 
 .header-main h1 {
     font-family: 'Merriweather Sans', sans-serif;
+    font-style: italic;
     line-height: 50px;
 }
 
