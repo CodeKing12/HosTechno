@@ -526,6 +526,10 @@ footer .logo h2 {
     color: white;
 }
 
+.copyright p {
+    font-size: 14px;
+}
+
 #weOffer .text-head h1 {
     padding-top: 3rem;
     color: #212529;
@@ -582,7 +586,7 @@ footer .logo h2 {
 }
 
 .highlight-plan {
-    transform: scale(1.13);
+    transform: scale(1.12);
     background-color: #2b35a0;
     border-color: #2b35a0;
     transition: all .5s linear;
@@ -637,6 +641,33 @@ footer .logo h2 {
     .aplan {
         width: 80%;
     }
+
+    #highPlan {
+        order: unset;
+    }
+}
+
+.foot ul li {
+    margin-bottom: 0.5rem;
+}
+
+.foot h4 {
+    margin-bottom: 1rem;
+}
+
+.purchase-btn {
+    color: #fff;
+    border: 3px solid #2b35a0;
+    background-color: #2b35a0;
+    border-radius: 50px;
+    transition: all .25s ease;
+}
+
+.highlight-plan .purchase-btn {
+    background-color: wheat;
+    border-color: wheat;
+    color: #1F2D3D;
+    transition: all .2s ease;
 }
 
 /* #2b35a0, #0e143b */
