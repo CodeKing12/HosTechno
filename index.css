@@ -536,4 +536,107 @@ footer .logo h2 {
     color: #2b35a0;
 }
 
+.all-plans {
+    margin-top: -10rem !important;
+    padding-bottom: 8rem;
+}
+
+.aplan {
+    padding: 3.5rem 1.5rem !important;
+    background-color: #f1f1f1;
+    border: 3px solid #f1f1f1;
+    border-radius: 5px;
+    width: 30%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: all .5s ease;
+}
+
+.aplan .desc h2 {
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+    color: #2b35a0;
+}
+
+.aplan .desc p {
+    color: #606469;
+}
+
+.checklist li {
+    list-style: none;
+    color: #091E3F;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.price-tag {
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #1F2D3D;
+}
+
+.price-tag span {
+    font-size: 31px;
+    color: #2b35a0;
+}
+
+.highlight-plan {
+    transform: scale(1.13);
+    background-color: #2b35a0;
+    border-color: #2b35a0;
+    transition: all .5s linear;
+    color: white;
+}
+
+.scale-hide {
+    display: none;
+}
+
+.highlight-plan .desc p, .highlight-plan .checklist li, .highlight-plan * {
+    color: white;
+}
+
+.highlight-plan svg {
+    display: none;
+    transition: all 0.1s ease;
+}
+
+.highlight-plan .scale-hide {
+    display: block;
+    transition: all 0.1s ease;
+}
+
+.highlight-plan .price-tag span, .highlight-plan .desc h2 {
+    color: wheat;
+}
+
+@media (max-width: 995px) {
+    .aplan {
+        width: 45%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 40px;
+    }
+
+    #highPlan {
+        order: 3;
+        margin-top: 40px;
+    }
+
+    .highlight-plan {
+        margin-bottom: 50px;
+    }
+
+    .all-plans {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .aplan {
+        width: 80%;
+    }
+}
+
 /* #2b35a0, #0e143b */
