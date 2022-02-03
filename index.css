@@ -1049,16 +1049,41 @@ button:focus:not(:focus-visible) {
     color: #0e143b
 }
 
-/* .accordion-button svg {
-    transition: transform .2s ease-in-out;
+.benefits .text-head h1 {
+    color: #2b35a0;
+    font-size: 36px;
 }
 
-.accordion-button:not(.collapsed) svg {
-    transform: rotate(-180deg) !important;
+.abenefit {
+    padding-left: 2rem;
 }
 
-.accordion-button:focus svg {
-    transform: rotate(-180deg) !important;
-} */
+.abenefit h5 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
 
-/* #2b35a0, #0e143b */
+.abenefit h5 span {
+    color: #2b35a0;
+    font-weight: bold;
+}
+
+.benefits-list {
+    padding-left: unset;
+}
+
+.benefits-list li {
+    list-style: none;
+}
+
+.benefits-list li svg {
+    height: fit-content;
+    min-width: 23px;
+    margin-right: 0.7rem;
+}
+
+@media (max-width: 576px) {
+    .abenefit {
+        padding-right: 2rem
+    }
+}
