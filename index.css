@@ -11,6 +11,10 @@ p {
     font-size: 15px;
 }
 
+body {
+    max-width: 100%;
+}
+
 header {
     /* background: linear-gradient(-90deg,#0e143b 0,#2b35a0 100%); */
     background-color: #0e143b;
@@ -351,8 +355,8 @@ header {
 }
 
 .features .text-head h1 {
-    font-size: 45px;
-    color: #212529
+    font-size: 37px;
+    color: #2b35a0;
 }
 
 .feature-tabs ul {
@@ -843,5 +847,218 @@ footer .logo h2 {
         flex-direction: column;
     }
 }
+
+.service-tabs {
+    margin-bottom: -11px !important;
+    padding: unset !important;
+    justify-content: unset !important;
+}
+
+.service-tabtent {
+    margin-top: -11px;
+    border: 3px solid #2b35a0;
+    background-color: #e7eaf3;
+}
+
+.service-tabs .active {
+    background-color: #e7eaf3 !important;
+    border: 3px solid #2b35a0 !important;
+    border-radius: unset !important;
+    margin-bottom: unset !important;
+}
+
+.service-tabs li {
+    width: auto !important;
+}
+
+.feature-tabs li .active {
+    background-color: #e7eaf3 !important;
+    border-bottom-color: #e7eaf3 !important;
+}
+
+.feature-tabs li button:focus, .feature-tabs li .active:hover {
+    border: 3px solid #2b35a0 !important;
+    border-bottom-color: #e7eaf3 !important;
+    background-color: #e7eaf3 !important;
+    transition: all .3s ease, border-width .05s linear .2s;
+}
+
+@media (max-width: 760px) {
+    .feature-tabs li button {
+        width: fit-content !important;
+    }
+
+    .service-tabtent {
+        margin-top: unset !important;
+    }
+}
+
+
+.service-tabtent .aplan {
+    width: 45%;
+    margin-bottom: 40px;
+    padding: unset !important;
+    padding-bottom: 2.5rem !important;
+    border-color: #e7eaf3;
+    background-color: wheat;
+}
+
+.service-tabtent .aplan .checklist, .service-tabtent .aplan .price-tag, .service-tabtent .aplan .purchase-btn {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+} 
+
+.service-tabtent .aplan .checklist {
+    justify-content:center !important;
+}
+
+.service-tabtent .aplan .checklist div {
+    width: fit-content;
+    margin: 17px 0;
+}
+
+.service-tabtent .aplan .checklist li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.service-tabtent .purchase-btn {
+    margin-top: 14px;
+}
+
+.service-tabtent .aplan .price-tag {
+    margin-top: 20px;
+}
+
+.service-tabtent .aplan .desc {
+    padding: 22px 0;
+    padding-bottom: 20px !important;
+    background-color: #2b35a0;
+    color: white;
+}
+
+.service-tabtent .aplan .desc h2 {
+    margin-bottom: 13px;
+    color: wheat;
+}
+
+.service-tabtent .aplan .desc p {
+    color: white;
+}
+
+@media (max-width: 910px) {
+    .service-tabtent .aplan {
+        width: 90%;
+    }
+}
+
+.service-tabtent .active {
+    display: flex;
+}
+
+@media (max-width: 750px) {
+    .service-tabtent {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+@media (max-width: 565px) {
+    .service-tabtent .aplan {
+        width: 100%;
+        margin-left: unset;
+        margin-right: unset;
+        border-color: #f1f1f1;
+    }
+
+    .service-tabtent {
+        border: unset;
+        background-color: unset;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .feature-tabs li .active, .feature-tabs li .active:focus, .feature-tabs li .active:hover {
+        border-bottom-color: #2b35a0 !important;
+    }
+}
+
+@media (max-width: 435px) {
+    .service-tabtent {
+        padding-left: unset !important;
+        padding-right: unset !important;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 410px) {
+    .service-tabs li button {
+        width: 100px !important;
+    }
+
+    .service-tabtent {
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+}
+
+.accordion-item {
+    margin-bottom: 17px;
+}
+
+.accordion-header button {
+    background-color: #2b35a0 !important;
+    color: white !important;
+}
+
+.accordion-button:focus {
+    border: unset !important;
+    outline: unset;
+    box-shadow: unset;
+}
+
+button:focus:not(:focus-visible) {
+    outline: unset;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjMuNjc3IDE4LjUyYy45MTQgMS41MjMtLjE4MyAzLjQ3Mi0xLjk2NyAzLjQ3MmgtMTkuNDE0Yy0xLjc4NCAwLTIuODgxLTEuOTQ5LTEuOTY3LTMuNDcybDkuNzA5LTE2LjE4Yy44OTEtMS40ODMgMy4wNDEtMS40OCAzLjkzIDBsOS43MDkgMTYuMTh6Ii8+PC9zdmc+");
+    transform: rotate(-180deg);
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjMuNjc3IDE4LjUyYy45MTQgMS41MjMtLjE4MyAzLjQ3Mi0xLjk2NyAzLjQ3MmgtMTkuNDE0Yy0xLjc4NCAwLTIuODgxLTEuOTQ5LTEuOTY3LTMuNDcybDkuNzA5LTE2LjE4Yy44OTEtMS40ODMgMy4wNDEtMS40OCAzLjkzIDBsOS43MDkgMTYuMTh6Ii8+PC9zdmc+");
+}
+
+.accordion-body {
+    color: #091E3F;
+    border: 2px solid #2b35a0;
+    background-color: wheat;
+}
+
+.faq .text-head {
+    padding-bottom: unset !important;
+}
+
+.faq .text-head h1 {
+    color: #2b35a0;
+    font-size: 36px;
+}
+
+.faq .text-head h1 span {
+    color: #0e143b
+}
+
+/* .accordion-button svg {
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) svg {
+    transform: rotate(-180deg) !important;
+}
+
+.accordion-button:focus svg {
+    transform: rotate(-180deg) !important;
+} */
 
 /* #2b35a0, #0e143b */
